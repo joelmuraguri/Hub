@@ -34,15 +34,18 @@ fun Project.configureDataLibrary(
         dependencies {
             "implementation"(libs.findLibrary("timber").get())
             "implementation"(libs.findLibrary("hilt").get())
+            "implementation"(libs.findLibrary("room-ktx").get())
+            "implementation"(libs.findLibrary("room-runtime").get())
             "ksp"(libs.findLibrary("hilt-compiler").get())
+            "ksp"(libs.findLibrary("room-compiler").get())
             "implementation"(libs.findLibrary("kotlin-coroutines").get())
             "implementation"(libs.findLibrary("retrofit-core").get())
             "implementation"(libs.findLibrary("retrofit-kotlin-serialization").get())
             "implementation"(libs.findLibrary("kotlinx-serialization-json").get())
             "implementation"(libs.findLibrary("okhttp-logging").get())
+            "implementation"(libs.findLibrary("androidx-paging-compose").get())
+            "implementation"(libs.findLibrary("androidx-paging-runtime").get())
             "testImplementation"(libs.findLibrary("kotlin-coroutines-test").get())
-
         }
-
     }
 }
