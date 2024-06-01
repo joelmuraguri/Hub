@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Hub"
 include(":app")
+include(":presentation:discover")
