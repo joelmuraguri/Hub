@@ -23,3 +23,4 @@ rootProject.name = "Hub"
 include(":app")
 include(":presentation:discover")
 include(":presentation:profile")
+include(":core:data")
