@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -19,6 +20,9 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
+
 rootProject.name = "Hub"
 include(":app")
 include(":presentation:discover")
@@ -34,4 +38,3 @@ include(":comic:data")
 include(":comic:domain")
 include(":anime:data")
 include(":anime:domain")
-include(":build-logic:convention")
