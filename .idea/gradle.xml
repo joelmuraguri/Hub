@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/anime/data" />
             <option value="$PROJECT_DIR$/anime/domain" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/build-logic" />
+            <option value="$PROJECT_DIR$/build-logic/convention" />
             <option value="$PROJECT_DIR$/comic" />
             <option value="$PROJECT_DIR$/comic/data" />
             <option value="$PROJECT_DIR$/comic/domain" />
