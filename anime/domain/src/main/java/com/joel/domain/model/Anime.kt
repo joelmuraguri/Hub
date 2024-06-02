@@ -1,9 +1,8 @@
 package com.joel.domain.model
 
-data class Comic(
+data class Anime(
     val id : Int,
     val title : String,
     val image : String,
-    val producer : String,
-    val url : String
+    val genres : List<String>
 )

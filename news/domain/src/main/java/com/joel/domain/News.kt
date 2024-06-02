@@ -1,9 +1,9 @@
-package com.joel.domain.model
+package com.joel.domain
 
-data class Comic(
+data class News(
     val id : Int,
     val title : String,
     val image : String,
-    val producer : String,
+    val genres : List<String>,
     val url : String
 )
