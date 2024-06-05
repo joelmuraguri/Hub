@@ -43,6 +43,7 @@
             <option value="$PROJECT_DIR$/presentation" />
             <option value="$PROJECT_DIR$/presentation/discover" />
             <option value="$PROJECT_DIR$/presentation/profile" />
+            <option value="$PROJECT_DIR$/presentation/search" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
