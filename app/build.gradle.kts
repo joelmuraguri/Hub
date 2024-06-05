@@ -8,3 +8,8 @@ android {
     namespace = "com.joel.hub"
 }
 
+
+dependencies {
+    implementation(project(":presentation:discover"))
+    implementation(project(":presentation:profile"))
+}
