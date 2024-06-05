@@ -1,4 +1,4 @@
-package com.joel.discover.components
+package com.joel.discover.core.components
 
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.DrawerState
@@ -19,6 +19,7 @@ fun AppBar(
     screenTitle : String,
     drawerState: DrawerState,
     onSearchClick: () -> Unit,
+    onProfileClick: () -> Unit,
     scope: CoroutineScope
 ){
 
@@ -34,7 +35,7 @@ fun AppBar(
                 onSearchClick = onSearchClick
             )
             ProfileIcon {
-
+                onProfileClick()
             }
         }
     )

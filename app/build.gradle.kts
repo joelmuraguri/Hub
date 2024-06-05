@@ -12,4 +12,5 @@ android {
 dependencies {
     implementation(project(":presentation:discover"))
     implementation(project(":presentation:profile"))
+    implementation(project(":presentation:search"))
 }

@@ -9,19 +9,20 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.joel.discover.components.AppBar
+import com.joel.discover.core.components.AppBar
 import kotlinx.coroutines.CoroutineScope
 
 @Composable
 fun FilmScreen(
     scope: CoroutineScope,
     onSearchClick: () -> Unit,
+    onProfileClick: () -> Unit,
     drawerState: DrawerState
 ) {
 
     Scaffold(
         topBar = {
-            AppBar(screenTitle = "Films", onSearchClick = { onSearchClick() }, scope = scope, drawerState = drawerState)
+            AppBar(screenTitle = "Films", onSearchClick = { onSearchClick() }, scope = scope, drawerState = drawerState, onProfileClick = onProfileClick)
         }
     ) {
         Box(

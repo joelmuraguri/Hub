@@ -9,26 +9,27 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.joel.discover.components.AppBar
+import com.joel.discover.core.components.AppBar
 import kotlinx.coroutines.CoroutineScope
 
 @Composable
 fun NewsScreen(
     scope: CoroutineScope,
     onSearchClick: () -> Unit,
+    onProfileClick: () -> Unit,
     drawerState: DrawerState
 ) {
 
     Scaffold(
         topBar = {
-            AppBar(screenTitle = "News", onSearchClick = { onSearchClick() }, scope = scope, drawerState = drawerState)
+            AppBar(screenTitle = "News", onSearchClick = { onSearchClick() }, scope = scope, drawerState = drawerState, onProfileClick = onProfileClick)
         }
-    ) {
+    ) {paddingValues ->
         Box(
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .fillMaxSize()
-                .padding(it)
+                .padding(paddingValues)
         ) {
             Text(text = "NEWS")
         }
