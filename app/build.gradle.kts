@@ -13,4 +13,8 @@ dependencies {
     implementation(project(":presentation:discover"))
     implementation(project(":presentation:profile"))
     implementation(project(":presentation:search"))
+    implementation(project(":core:data"))
+    implementation(project(":core:presentation"))
+    implementation(libs.androidx.lifecycle.runtime.compose.android)
+
 }

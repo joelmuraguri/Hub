@@ -23,6 +23,7 @@ pagingCompose = "3.3.0"
 pagingRuntime = "3.3.0"
 retrofit2KotlinxSerializationConverter = "1.0.0"
 room = "2.6.1"
+lifecycleRuntimeComposeAndroid = "2.8.1"
 
 
 [libraries]
@@ -68,6 +69,7 @@ androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.r
 # configurations dependencies
 agp = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+androidx-lifecycle-runtime-compose-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose-android", version.ref = "lifecycleRuntimeComposeAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
