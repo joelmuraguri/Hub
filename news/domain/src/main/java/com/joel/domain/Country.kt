@@ -170,7 +170,6 @@ enum class CountryCode(val code: String, val countryName: String) {
         fun fromCode(code: String): CountryCode? {
             return entries.find { it.code == code }
         }
-
         fun fromCountryName(countryName: String): CountryCode? {
             return entries.find { it.countryName == countryName }
         }

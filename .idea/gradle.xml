@@ -21,15 +21,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/anime" />
-            <option value="$PROJECT_DIR$/anime/data" />
-            <option value="$PROJECT_DIR$/anime/domain" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/build-logic" />
             <option value="$PROJECT_DIR$/build-logic/convention" />
             <option value="$PROJECT_DIR$/comic" />
             <option value="$PROJECT_DIR$/comic/data" />
             <option value="$PROJECT_DIR$/comic/domain" />
+            <option value="$PROJECT_DIR$/comic/presentation" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/data" />
             <option value="$PROJECT_DIR$/core/domain" />
