@@ -10,5 +10,5 @@ object ProjectConfig {
     val sourceCompatibility = JavaVersion.VERSION_17
     val targetCompatibility = JavaVersion.VERSION_17
     const val jvmTarget = "17"
-    const val kotlinCompilerExtensionVersion = "1.5.10"
+    const val kotlinCompilerExtensionVersion = "1.5.14"
 }

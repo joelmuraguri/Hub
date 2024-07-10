@@ -1,3 +1,4 @@
+import com.joel.convention.config.kotlinOptions
 import com.joel.convention.util.ProjectConfig
 
 plugins {
@@ -13,4 +14,12 @@ android {
         sourceCompatibility = ProjectConfig.sourceCompatibility
         targetCompatibility = ProjectConfig.targetCompatibility
     }
+    kotlinOptions {
+        jvmTarget = ProjectConfig.jvmTarget
+    }
+}
+
+dependencies{
+    implementation(project(":comic:domain"))
+    implementation(project(":comic:data"))
 }

@@ -35,9 +35,11 @@
             <option value="$PROJECT_DIR$/film" />
             <option value="$PROJECT_DIR$/film/data" />
             <option value="$PROJECT_DIR$/film/domain" />
+            <option value="$PROJECT_DIR$/film/presentation" />
             <option value="$PROJECT_DIR$/news" />
             <option value="$PROJECT_DIR$/news/data" />
             <option value="$PROJECT_DIR$/news/domain" />
+            <option value="$PROJECT_DIR$/news/presentation" />
             <option value="$PROJECT_DIR$/presentation" />
             <option value="$PROJECT_DIR$/presentation/discover" />
             <option value="$PROJECT_DIR$/presentation/profile" />

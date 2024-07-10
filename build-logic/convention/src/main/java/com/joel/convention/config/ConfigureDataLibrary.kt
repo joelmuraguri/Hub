@@ -1,6 +1,6 @@
 package com.joel.convention.config
 
-import com.android.build.api.dsl.LibraryExtension
+import com.android.build.api.dsl.CommonExtension
 import com.joel.convention.util.ProjectConfig
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension
@@ -8,7 +8,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.getByType
 
 fun Project.configureDataLibrary(
-    extension: LibraryExtension
+    extension: CommonExtension<*, *, *, *, *, *>
 ) {
     extension.apply {
         val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
@@ -16,19 +16,7 @@ fun Project.configureDataLibrary(
 
         defaultConfig {
             minSdk = ProjectConfig.minSdk
-
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-            consumerProguardFiles("consumer-rules.pro")
-        }
-
-        buildTypes {
-            release {
-                isMinifyEnabled = false
-                proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
-                )
-            }
         }
 
         dependencies {

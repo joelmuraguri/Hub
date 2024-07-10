@@ -1,4 +1,6 @@
+import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.dsl.LibraryExtension
+import com.joel.convention.config.configureAndroidCompose
 import com.joel.convention.config.configureDataLibrary
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -12,8 +14,10 @@ class DataAndroidLibraryConventionPlugin : Plugin<Project> {
                 apply("kotlinx-serialization")
             }
 
-
             extensions.findByType(LibraryExtension::class.java)?.let {
+                configureDataLibrary(it)
+            }
+            extensions.findByType(ApplicationExtension::class.java)?.let {
                 configureDataLibrary(it)
             }
         }

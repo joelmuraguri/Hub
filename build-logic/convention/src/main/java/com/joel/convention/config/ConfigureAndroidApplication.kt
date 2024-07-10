@@ -30,6 +30,7 @@ fun Project.configureAndroidApplication(
             vectorDrawables {
                 useSupportLibrary = true
             }
+
         }
 
         buildFeatures {

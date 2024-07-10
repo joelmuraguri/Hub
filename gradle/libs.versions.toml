@@ -1,13 +1,13 @@
 [versions]
-agp = "8.4.0"
-kotlin = "1.9.22"
+agp = "8.4.2"
+kotlin = "1.9.24"
 coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.8.1"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
-composeBom = "2024.05.00"
+composeBom = "2024.06.00"
 appcompat = "1.7.0"
 material = "1.12.0"
 retrofit = "2.11.0"
@@ -17,14 +17,16 @@ okhttp = "4.12.0"
 kotlin-coroutines = "1.8.0"
 hilt-navigation-compose = "1.2.0"
 timber = "5.0.1"
-hilt = "2.51"
-ksp = "1.9.22-1.0.18"
+hilt = "2.51.1"
+ksp = "1.9.24-1.0.20"
 pagingCompose = "3.3.0"
 pagingRuntime = "3.3.0"
 retrofit2KotlinxSerializationConverter = "1.0.0"
 room = "2.6.1"
-lifecycleRuntimeComposeAndroid = "2.8.1"
-
+lifecycleRuntimeComposeAndroid = "2.8.3"
+pagingCommonAndroid = "3.3.0"
+pagingComposeAndroid = "3.3.0"
+landscapistVersion = "1.4.9"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -32,7 +34,6 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
@@ -63,13 +64,14 @@ room-testing = { group ="androidx.room", name= "room-testing", version.ref="room
 room-paging = {group="androidx.room", name="room-paging", version.ref="room"}
 androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "pagingCompose" }
 androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "pagingRuntime" }
-
-
+landscapist-coil = { module = "com.github.skydoves:landscapist-coil", version.ref = "landscapistVersion" }
 
 # configurations dependencies
 agp = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 kgp = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 androidx-lifecycle-runtime-compose-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose-android", version.ref = "lifecycleRuntimeComposeAndroid" }
+androidx-paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }
+androidx-paging-compose-android = { group = "androidx.paging", name = "paging-compose-android", version.ref = "pagingComposeAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -79,7 +81,6 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-
 
 # custom app defined plugins
 hub-android-application = { id = "hub.android.application", version = "unspecified" }
